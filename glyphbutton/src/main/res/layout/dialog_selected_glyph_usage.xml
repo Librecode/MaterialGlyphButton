@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/glyph_helper_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:visibility="gone">
+
+    <org.librecode.glyphbutton.widget.MaterialGlyphButton
+        android:id="@+id/helper_glyph_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="48sp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/icon_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/details_close_button"
+        android:layout_toRightOf="@id/helper_glyph_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@id/helper_glyph_icon"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <org.librecode.glyphbutton.widget.MaterialGlyphButton
+        android:id="@+id/details_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        app:material_icon="close" />
+
+    <TextView
+        android:id="@+id/text_usage_code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helper_glyph_icon"
+        android:text="Kotlin"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_usage_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_usage_code_title"
+        android:layout_marginTop="10dp"
+        android:background="#a2a2a2"
+        android:padding="5dp"
+        android:textSize="11sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/text_usage_xml_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_usage_code"
+        android:paddingTop="10dp"
+        android:text="XML"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_usage_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_usage_xml_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#a2a2a2"
+        android:padding="5dp"
+        android:textSize="11sp"
+        android:typeface="monospace" />
+</RelativeLayout>
