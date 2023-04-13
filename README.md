@@ -17,9 +17,17 @@ button.setGlyph(Glyph.ACCESSIBILITY)
 <org.librecode.glyphbutton.widget.MaterialGlyphButton
     app:material_icon="accessibility" />
 ```
+
+## Icon Help
+Currently there are 2123 icons availabe in the bundled material font and all of the icons can be loaded on the widget. You can launch the `GlyphFinderActivity` included in the library to see a list of icons. Clicking each icons displays the usage details. Please see the screenshots below.
+
+Each icon is using the same name as in the Material Fonts web page, All caps in the Enum and all small for attr name, with few exceptions.
+1. The names starts with number is prefixed with `N_` since variable names cannot start with number
+2. Names which are Java/Kotlin reserved words like `class` or `try` is postfixed with `_1`
+
 ## Screenshots
 ### List of icons
-![List of Icons](./images/img.png)
+![List of Icons](./images/img_0.png)
 ### Details of selected icon
 ![List of Icons](./images/img_1.png) 
 
